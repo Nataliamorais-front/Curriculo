@@ -1,4 +1,4 @@
-TESTE
+
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -9,31 +9,75 @@ TESTE
     <style>
        @import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
        @import url('https://fonts.googleapis.com/css2?family=Delius&family=Parisienne&display=swap');
-      body{
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 15px;
-        text-align: justify;
+      *{
+        margin:0px;
+        padding:0px;
+      }
+
+       body{
         background-image: linear-gradient( to right, #A68F97,#FFFFFF,#889C9B);
+        
+      }
+
+      header{
+        margin-bottom: 20px;
+        padding: 20px;
+        
+
+
+      }
+
+      main > header  p{
+        color: #DB637B;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-shadow: 1px 1px 2px #C163DB;
+
+      }
+
+      nav{
+        margin:5px;
+        
+        
+        
+      }
+
+      nav a{
+        margin:10px;
+        text-decoration: none;
+        color:white;
+        font-size: 1.2em;
+        
+        
+      }
+
+      a:hover{
+        text-decoration: underline;
+        background-color: white;
+        padding: 8px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
       }
 
       h1{
         font-family: "Parisienne", cursive;
-        font-weight: 600;
-         font-style: normal;
-         text-align: center;
-         border-style: groove;
-         text-shadow: 0px 1px 3px black;
-         border-radius: 10px 10px 10px 10px;
+        text-align: center;
+        font-size: 3em;
+        color: #C163DB;
+        text-shadow: 2px 1px 3px black;
+        
          
-         
-         padding: 10px;
-         margin: 10px auto;
-         background-color: white;
+      }
+
+      img{
+        width: 100%;
       }
 
       .perfil{
-        width: 150px;
-        margin: 10px auto;
+        width: 180px;
+        margin: 30px auto;
+        margin-top: 30px;
+        
         display:block;
         box-shadow: 2px 2px 2px 2px;
         border-radius: 50%;
@@ -53,17 +97,23 @@ TESTE
        
       }
 
-      p{
-        padding-left: 10px;
-        padding-right: 10px;
-        background-color: white;
-        box-shadow: 1px 2px 3px black;
-       
+      main  {
         padding: 15px;
-        margin-top: 25px;
+        max-width: 450px;
+        min-width: 1000px;
+        margin:auto;        
+        
+        
+        
+       }
+
+      main > p {
+        
+        margin-bottom: 15px;
+        padding: 10px;
         text-align: justify;
         line-height: 2.1em;
-        border-radius: 10px 10px 10px 10px;
+        
       }
 
       a:hover{
@@ -73,6 +123,8 @@ TESTE
       aside{
         background-color: white;
       }
+
+
       h3{
         color:darkgrey;
         font-family: Georgia, 'Times New Roman', Times, serif;
@@ -89,11 +141,17 @@ TESTE
 
      }
 
-    .social{
+    footer{
         text-align: center;
         
         
+        
     }
+
+    .icone{
+      width: 100%;
+    }
+
     
 
      
@@ -102,9 +160,17 @@ TESTE
 </head>
 <body>
     <main>
-      <h1>Natália Morais Teixeira</h1>
-      <img class="perfil" src="1722649615775.jpg" alt="foto eu">
-      <h2>Desenvolvedora Frontend</h2>
+      <header>
+        <h1>Natália Morais Teixeira</h1>
+        <p>Desenvolvedora Frontend</p>
+      </header>
+      <nav>
+        <a href="#">Sobre</a>
+        <a href="#">Projetos</a>
+        <a href="#">Contato</a>
+      </nav>
+      <img class="perfil"  src="1722649615775.jpg" alt="foto eu">
+      
       <p>Sou formada em Recursos Humanos, mas atualmente estou em transição de carreira para a área de TI, com foco no desenvolvimento Frontend. Tenho um perfil proativo, responsável e com grande capacidade de resolução de problemas, além de um forte senso de urgência e comprometimento com meus objetivos. Acredito no poder da colaboração e tenho facilidade em trabalhar em equipe para alcançar resultados eficazes. Atualmente, estou cursando a faculdade em Sistemas para Internet, e curso de html e Css com Gustavo Guanabara, logo, seguirei para JavaScript e demais blibiotecas e frameworks. Ao longo da minha trajetória desenvolvi interesse pela área de tecnologia pelo fato desta área estar em constante evolução, e ter infinitas possibilidades de aprender, inovar e criar. A tecnologia pode transformar o mundo das pessoas.
           Nos meus momentos livres, gosto de viajar, estar com a família, ler, assistir séries e academia. Esses hobbies são importantes para meu equilíbrio pessoal e me ajudam a manter minha energia e motivação para os desafios profissionais.</p>
           <aside>
@@ -116,11 +182,12 @@ TESTE
                 <li>Olhar critico</li>
                 <li>Senso de urgencia</li>
                 <li>Organizada</li>
+                </ul>
           </aside>
-          </ul>
-          <div class="social">
-              <img  src="favicon-16x16.png" alt="icone"> - <a href="https://www.linkedin.com/in/nat%C3%A1lia-morais-teixeira-3b4487120/">Linkedin</a>
-          </div>
+          
+          
+              <footer><img class="icone" src="favicon-16x16.png" alt="icone"> - <a href="https://www.linkedin.com/in/nat%C3%A1lia-morais-teixeira-3b4487120/">Linkedin</a></footer>
+          
     </main>
 </body>
 </html>
